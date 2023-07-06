@@ -132,7 +132,7 @@ nav {
 }
 
 .nav-link {
-    padding: 14.4px 20px;
+    padding: 14.4px 15px;
     border-radius: 50%;
 }
 
@@ -157,7 +157,7 @@ nav {
     background: linear-gradient(#4DB5FF,
             transparent);
     border-radius: 20px;
-    width:  70%;
+    width:  85%;
     display: block;
     margin: 0 auto;
 }
@@ -346,6 +346,10 @@ form {
 
 .message {
     height: 150px;
+    background-color: #1f1f38;
+    border: 1px solid rgba(77,181,255,0.4);
+    color: #fff;
+    border-radius: 5px;
 }
 
 footer {
@@ -406,8 +410,77 @@ small.lastii {
     font-size: 14px;
 }
 
+.send-msg {
+    background-color: #4DB5FF;
+    width: 40%;
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+}
 
-@media only screen and (min-width: 900px) {
+.send-msg:hover {
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1199px) {
+    .container {
+        width: 75% !important;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .me {
+        width: 65% !important;
+        display: block;
+    }
+
+    .my {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block;
+    }
+    
+    .about-grid-container {
+        grid-template-columns: auto !important;
+        grid-template-rows: auto;
+    }
+
+    .items {
+        grid-template-columns: auto auto auto !important;
+    }
+
+    .exp {
+        flex-direction: row !important;
+        column-gap: 10px;
+    }
+
+    .get-in-touch {
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+
+    .get-in-touch > div {
+        flex-basis: 33%;
+    }
+
+    .send-msg {
+        background-color: #4DB5FF;
+        width: 25% !important;
+        padding: 15px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .foot-nav {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .container {
         width: 75% !important;
     }
@@ -428,7 +501,7 @@ small.lastii {
     }
 
     .about-grid-container {
-        grid-template-columns: auto 50%;
+        grid-template-columns: auto 50% !important;
         gap: 0;
     }
 
@@ -495,5 +568,13 @@ small.lastii {
 
     .foot-svg-box {
         margin-top: 70px !important;
+    }
+
+    .send-msg {
+        background-color: #4DB5FF;
+        width: 25% !important;
+        padding: 15px;
+        display: block;
+        border-radius: 5px;
     }
 }
