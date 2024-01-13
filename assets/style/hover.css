@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.hover-pale-gray:hover
+{
+  color: var(--pale-gray);
+}
+
+#cv:hover,
+#footer-btn:hover {
+  background-color: var(--dimmed-yellow);
+}
+
+.hover-pale-gray:hover #hero-contact
+{
+  border: 1px solid var(--very-dimmed-ash);
+}
+
+.service-item-sub-heading:hover>.arrow-up-right,
+#projects-sub-heading:hover>.arrow-up-right
+{
+  transform: rotate(50deg);
+  background-color: var(--ash);
+  outline: 1px solid var(--ash);
+}

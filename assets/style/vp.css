@@ -1,0 +1,10 @@
+/* @media (min-width: 800px) {
+  #services-item-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  :is(.service-item-3) {
+    padding: 0 20px !important;
+  }
+} */
