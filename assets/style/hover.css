@@ -2,23 +2,20 @@
 
 .hover-pale-gray:hover
 {
-  color: var(--pale-gray);
+  color: var(--gray);
 }
 
 #cv:hover,
 #footer-btn:hover {
-  background-color: var(--dimmed-yellow);
-}
-
-.hover-pale-gray:hover #hero-contact
-{
-  border: 1px solid var(--very-dimmed-ash);
+  background-color: var(--yellow);
 }
 
 .service-item-sub-heading:hover>.arrow-up-right,
 #projects-sub-heading:hover>.arrow-up-right
 {
   transform: rotate(50deg);
-  background-color: var(--ash);
-  outline: 1px solid var(--ash);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--gray);
 }
