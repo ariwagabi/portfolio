@@ -33,7 +33,7 @@
     <section id="parent-container">
       <header>
         <div class="container-fluid">
-          <section id="navigation-bar" class="pale-gray">
+          <section id="navigation-bar">
             <article id="nav-brand">
               <a href="/" id="brand-name">ariwagabi</a>
             </article>
@@ -51,18 +51,22 @@
 
             <!-- Large Screen Navlink -->
             <article id="bg-nav">
-              <ul id="bg-container" class="flexbox align-items-center">
+              <ul id="bg-container">
                 <li class="bg-navlink"><a href="./pages/home">home</a></li>
                 <li class="bg-navlink"><a href="./pages/about">about</a></li>
                 <li class="bg-navlink"><a href="./pages/services">services</a></li>
                 <li class="bg-navlink"><a href="./pages/contact">contact</a></li>
                 <li class="bg-navlink"><a href="mailto:ariwagabi@programmer.net" id="bg-lets-talk">let's talk</a></li>
+                <li class="bg-navlink flexbox align-items-center">
+                  <iconify-icon icon="material-symbols-light:dark-mode" width="25" data-type-theme
+                  title="Switch Theme"></iconify-icon>
+                </li>
               </ul>
             </article>
 
             <article id="nav-btn-and-icon">
               <div id="menu-icon-container" class="flexbox align-items-center">
-                <div id="nav-btn" class="pale-gray flexbox align-items-center">
+                <div id="nav-btn" class="flexbox align-items-center">
                   <a href="mailto:ariwagabi@programmer.net" id="lets-talk">let's talk</a>
                 </div>
 
@@ -70,16 +74,14 @@
                 <div id="nav-menu-icon" class="flexbox align-items-center">
                   <!-- Theme Icons -->
                   <div id="themes-container" class="flexbox align-items-center">
-                    <iconify-icon icon="material-symbols-light:dark-mode-outline" width="30" data-type-theme="white"></iconify-icon>
-                    <iconify-icon icon="material-symbols-light:dark-mode" width="30"
-                      data-type-theme="dark"></iconify-icon>
+                    <iconify-icon icon="material-symbols-light:dark-mode" width="30" data-type-theme
+                      title="Switch Theme"></iconify-icon>
                   </div>
 
                   <!-- Menu Icons -->
                   <div id="menu-icons" class="flexbox align-items-center">
-                    <iconify-icon icon="basil:menu-outline" width="40" data-type-menu="open"
-                      class="menu-toggler"></iconify-icon>
-                    <iconify-icon icon="mi:close" width="40" data-type-menu="close" class="menu-toggler"></iconify-icon>
+                    <iconify-icon icon="basil:menu-outline" width="40" data-type-menu="open"></iconify-icon>
+                    <iconify-icon icon="mi:close" width="40" data-type-menu="close"></iconify-icon>
                   </div>
                 </div>
               </div>
@@ -92,30 +94,36 @@
         <section id="main-container">
           <div class="container">
             <article id="hero-area">
-              <div id="hero-name" class="pale-gray">
+              <div id="hero-name">
                 <h1>Arinzechukwu<br><span id="gabi">gaBi</span>
                   <p id="dot"></p>
                 </h1>
                 <hr class="hero-line">
                 <div id="hero-social">
-                  <a class="hover-dim-yellow" title="LinkedIn"
-                    href="https://www.linkedin.com/in/arinzechukwu-gabi-62149727a">
-                    <iconify-icon icon="fa-brands:linkedin-in" width="20"></iconify-icon></a>
-                  <a class="hover-dim-yellow" title="X(Formerly Twitter)" href="https://www.x.com/ariwagabi">
-                    <iconify-icon icon="fa6-brands:x-twitter" width="20"></iconify-icon></a>
-                  <a class="hover-dim-yellow" title="Instagram" href="https://www.instagram.com/ariwagabi">
-                    <iconify-icon icon="fa-brands:instagram" width="20"></iconify-icon></a>
-                  <a class="hover-dim-yellow" title="Github" href="https://www.github.com/ariwagabi">
-                    <iconify-icon icon="fa-brands:github" width="20"></iconify-icon></a>
+                  <a href="https://www.linkedin.com/in/arinzechukwu-gabi-62149727a">
+                    <iconify-icon icon="fa-brands:linkedin-in" width="20" class="hero-social-icons"
+                      title="LinkedIn"></iconify-icon>
+                  </a>
+                  <a href="https://www.x.com/ariwagabi">
+                    <iconify-icon icon="fa6-brands:x-twitter" width="20" class="hero-social-icons"
+                      title="X(Formerly Twitter)"></iconify-icon>
+                  </a>
+                  <a href="https://www.instagram.com/ariwagabi">
+                    <iconify-icon icon="fa-brands:instagram" width="20" class="hero-social-icons"
+                      title="Instagram"></iconify-icon>
+                  </a>
+                  <a href="https://www.github.com/ariwagabi">
+                    <iconify-icon icon="fa-brands:github" width="20" class="hero-social-icons"
+                      title="Github"></iconify-icon>
+                  </a>
                 </div>
 
-                <p id="hero-name-link" class="dim-yellow mt-10">
-                  <a href="mailto:ariwagabi@programmer.net" id="hero-contact">
-                    <iconify-icon icon="material-symbols:alternate-email" width="30" class="pale-gray"
-                      id="email-hidden"></iconify-icon>
-                    <iconify-icon icon="material-symbols-light:alternate-email" width="30" class="pale-gray"
+                <p id="hero-name-link">
+                  <a href="mailto:ariwagabi@programmer.net" id="hero-contact" title="Send a message">
+                    <iconify-icon icon="material-symbols:alternate-email" width="30" id="email-hidden"></iconify-icon>
+                    <iconify-icon icon="material-symbols-light:alternate-email" width="30"
                       id="email-shown"></iconify-icon>
-                    <span id="hero-email" class=" pale-gray">email</span>
+                    <span id="hero-email">email</span>
                   </a>
                 </p>
               </div>
@@ -123,16 +131,16 @@
                 <img src="./assets/img/person-6siiOwdN.png" alt="person">
               </div>
               <div id="intro">
-                <h4 id="intro-sub-header" class="dim-yellow">introduction</h4>
-                <h2 id="intro-main-header" class="pale-gray">frontend web developer</h2>
+                <h4 id="intro-sub-header">introduction</h4>
+                <h2 id="intro-main-header">frontend web developer</h2>
                 <!-- <hr class="hero-line"> -->
-                <p id="intro-pg-textbox" class="pale-gray">
-                  Premium Web Design and Frontend Web Development services to help your business stand out. Download my CV below.
+                <p id="intro-pg-textbox">
+                  Premium Web Design and Frontend Web Development services to help your business stand out. Download my
+                  CV below.
                 </p>
                 <p id="intro-learn-more">
-                  <a href="" class="pale-gray" id="cv">
-                    <iconify-icon icon="academicons:cv" width="30" class="pale-gray"
-                      id="email-shown"></iconify-icon>
+                  <a href="" id="cv" download> <!--Add CV img-->
+                    <iconify-icon icon="academicons:cv" width="30" title="Download my CV"></iconify-icon>
                   </a>
                 </p>
               </div>
@@ -152,7 +160,7 @@
                       <li class="service-item-4">
                         <div class="service-item-sub-heading">
                           <iconify-icon icon="ph:arrow-up-right-thin" class="arrow-up-right"></iconify-icon>
-                          <a rel="noopener" href="https://www.github.com/ariwagabi" target="_blank">about web design</a>
+                          <a rel="noopener" href="" target="_blank">about web design</a>
                         </div>
                       </li>
                     </ul>
@@ -166,7 +174,7 @@
                       <li class="service-item-4">
                         <div class="service-item-sub-heading">
                           <iconify-icon icon="ph:arrow-up-right-thin" class="arrow-up-right"></iconify-icon>
-                          <a rel="noopener" href="https://www.github.com/ariwagabi" target="_blank">about
+                          <a rel="noopener" href="" target="_blank">about
                             development</a>
                         </div>
                       </li>
@@ -240,7 +248,7 @@
               <h3 id="footer-main-header">project in mind?</h3>
               <p id="footer-big-subhead">Let's make your Website shine</p>
               <p id="footer-header-text">Premium web design and development to help your business stand out.</p>
-              <a href="mailto:ariwagabi@programmer.net" id="footer-btn">get in touch</a>
+              <center><a href="mailto:ariwagabi@programmer.net" id="footer-btn">get in touch</a></center>
             </article>
 
             <article id="footer-contact">
@@ -268,10 +276,10 @@
                 </li>
               </ul>
 
-              <form action="./pages/success" method="post" autocomplete="on" netlify>
+              <form action="./pages/success" method="post" netlify>
                 <input type="text" name="fname" id="fname" placeholder="Your Name" required>
                 <input type="email" name="email" id="email" placeholder="Your Email Address" required>
-                <input type="text" name="" id="" placeholder="Your Message" required>
+                <input type="text" name="message" id="message" placeholder="Your Message" required>
                 <input type="submit" value="Send Message">
               </form>
             </article>
